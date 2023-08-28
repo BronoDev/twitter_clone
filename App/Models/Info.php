@@ -13,7 +13,7 @@ class Info
 
     public function getInfo()
     {
-        $query = "select titulo, descricao preco from tb_info";
+        $query = "select titulo, descricao from tb_info";
         return $this->db->query($query)->fetchAll();
     }
 }

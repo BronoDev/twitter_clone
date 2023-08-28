@@ -30,7 +30,7 @@ class IndexController extends Action
         //instanciar modelo
         $info = new Info($conn);
         $informacoes = $info->getInfo();
-        $this->view->dados = $informacoes;
+        @$this->view->dados = $informacoes;
         $this->render('sobreNos', 'layout1');
     }
 
